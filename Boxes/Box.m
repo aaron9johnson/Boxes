@@ -17,4 +17,7 @@
 -(float)volume{
     return self.height * self.width * self.length;
 }
+-(int)boxInBoxAmount:(Box*)inBox{
+    return [self volume] / [inBox volume];
+}
 @end

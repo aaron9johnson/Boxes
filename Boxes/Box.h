@@ -14,4 +14,5 @@
 @property float length;
 -(void)init:(float)inHeight and:(float)inWidth and:(float)inLength;
 -(float)volume;
+-(int)boxInBoxAmount:(Box*)inBox;
 @end

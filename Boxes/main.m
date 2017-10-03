@@ -12,8 +12,14 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Box* box1 = [Box new];
-        [box1 init:12 and:15 and:32];
+        [box1 init:1 and:1 and:2];
         NSLog(@"%f",[box1 volume]);
+        
+        Box* box2 = [Box new];
+        [box2 init:1 and:1 and:1];
+        
+        NSLog(@"%d",[box1 boxInBoxAmount:box2]);
+        
     }
     return 0;
 }
