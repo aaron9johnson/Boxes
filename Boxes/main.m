@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Box.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Box* box1 = [Box new];
+        [box1 init:12 and:15 and:32];
+        NSLog(@"%f",[box1 volume]);
     }
     return 0;
 }
